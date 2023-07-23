@@ -23,3 +23,26 @@ joe@Eunsungui-MacBook-Pro-2 ~ % pyenv version
 **4.0.10**
 
   422  python -m django startproject backbone .
+
+
+## 개발 DB 세팅
+
+hombrew 설치
+
+brew install mysql@5.7
+
+brew services start mysql@5.7
+
+/usr/local/opt/mysql@5.7/bin/mysql_secure_installation
+
+→ 비밀번호 세팅
+
+echo 'export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"' >> ~/.zshrc
+
+→ 환경변수 세팅
+
+mysql -uroot -p
+
+mysql -u [your_username] -p
+
+→ mysql 접속
